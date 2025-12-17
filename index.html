@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ভণ্ড কে?</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ভণ্ড কে?</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
 </head>
 <body>
 
 <div class="container">
-  <h1>🤔 ভণ্ড কে?</h1>
+  <h1>🤔 ভণ্ড কে?</h1>
 
-  <label>খেলোয়াড় সংখ্যা (২–৯)</label>
-  <input type="number" id="players" min="2" max="9" value="3">
+  <label>খেলোয়াড় সংখ্যা (২–৯)</label>
+  <input type="number" id="players" min="2" max="9" value="3">
 
-  <label>ক্যাটাগরি</label>
-  <select id="category">
-    <option value="food">খাবার</option>
-    <option value="animal">প্রাণী</option>
-    <option value="celebrity">সেলিব্রিটি</option>
-    <option value="object">দৈনন্দিন জিনিস</option>
-  </select>
+  <label>ক্যাটাগরি</label>
+  <select id="category">
+    <option value="food">খাবার</option>
+    <option value="animal">প্রাণী</option>
+    <option value="celebrity">সেলিব্রিটি</option>
+    <option value="object">দৈনন্দিন জিনিস</option>
+  </select>
 
-  <button onclick="startGame()">🎮 খেলা শুরু</button>
+  <button onclick="startGame()">🎮 খেলা শুরু</button>
 
-  <!-- FLIP CARD -->
-  <div id="card" class="card hidden">
-    <div class="card-inner">
-      <div class="card-face card-front">
-        <p id="frontText"></p>
-        <small>চাপ দিয়ে ধরে রাখুন</small>
-      </div>
-      <div class="card-face card-back">
-        <p id="backText"></p>
-      </div>
-    </div>
-  </div>
+    <div id="card" class="card hidden">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <p id="frontText">শুরু করতে চাপুন</p>         <small>চাপ দিয়ে ধরে রাখুন</small>
+      </div>
+      <div class="card-face card-back">
+        <p id="backText"></p>
+      </div>
+    </div>
+  </div>
 
-  <button onclick="location.reload()">🔄 নতুন গেম</button>
+    <button id="newGameButton" onclick="location.reload()">🔄 নতুন গেম</button>
 </div>
 
 <script src="script.js"></script>

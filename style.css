@@ -95,3 +95,8 @@ small {
     height: 260px;
   }
 }
+/* Add this to your style.css */
+#newGameButton {
+    display: none;
+    /* You may want to add other styling for the button here */
+}

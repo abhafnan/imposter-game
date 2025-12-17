@@ -1,0 +1,37 @@
+<svg width="300" height="300" viewBox="0 0 300 300"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="300" rx="40" fill="#111"/>
+
+  <!-- Card -->
+  <rect x="60" y="50" width="180" height="200" rx="20"
+        fill="url(#grad)" />
+
+  <!-- Question Mark -->
+  <text x="150" y="165"
+        text-anchor="middle"
+        font-size="120"
+        font-family="Arial, sans-serif"
+        font-weight="bold"
+        fill="#00ff99">?</text>
+
+  <!-- Title -->
+  <text x="150" y="265"
+        text-anchor="middle"
+        font-size="28"
+        font-family="sans-serif"
+        font-weight="bold"
+        fill="#00ff99">
+    ভণ্ড কে?
+  </text>
+
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#222"/>
+      <stop offset="100%" stop-color="#000"/>
+    </linearGradient>
+  </defs>
+
+</svg>
